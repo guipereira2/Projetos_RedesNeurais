@@ -1,7 +1,19 @@
-# Projetos da UC introdução a redes neurais
+# Projetos da disciplina de introdução a redes neurais da UNIFESP 
 
 ## Projeto 1: 
-- Implementar uma rede MLP, em python, sem usar pacotes prontos (e.g., Pytorch, Tensorflow, etc.)
-- Com a rede implementada, desenvolver dois modelos: um para classificação e um para regressão.
-- Avaliar os hiperparâmetros dos modelos variando o número de camadas, número de neurônio e taxas (eta e momentum).
+Este projeto consiste na implementação de uma rede neural do tipo MLP (Multi-Layer Perceptron) em Python, sem o uso de bibliotecas próprias para aprendizado de máquina, como PyTorch ou TensorFlow. Após a implementação, diferentes modelos foram desenvolvidos para resolver problemas de classificação e regressão, com análise e ajustes de hiperparâmetros.
 
+### Objetivos 
+1. Implementar uma rede neural MLP:
+   - Construir a arquitetura base em Python, do zero.
+   - Implementar as funções de ativação (e.g., Sigmoid, ReLU, Softmax).
+   - Calcular gradientes usando backpropagation.
+   - Incluir funcionalidades como momento e taxa de aprendizado.
+
+2. Desenvolver modelos:
+   - Um modelo para classificação de dados.
+   - Um modelo para regressão. 
+
+3. Avaliar hiperparâmetros
+   - Variar o número de camadas ocultas e neurônios por camada.
+   - Testar diferentes taxas de aprendizados(eta) e fatores de momentum

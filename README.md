@@ -1,4 +1,4 @@
-# Projetos da disciplina de introdução a redes neurais da UNIFESP 
+# Projetos da disciplina de introdução a redes neurais (UNIFESP)
 
 ## Projeto 1: 
 Este projeto consiste na implementação de uma rede neural do tipo MLP (Multi-Layer Perceptron) em Python, sem o uso de bibliotecas próprias para aprendizado de máquina, como PyTorch ou TensorFlow. Após a implementação, diferentes modelos foram desenvolvidos para resolver problemas de classificação e regressão, com análise e ajustes de hiperparâmetros.

@@ -6,7 +6,7 @@ Este projeto consiste na implementação de uma rede neural do tipo MLP (Multi-L
 ### Objetivos 
 1. Implementar uma rede neural MLP:
    - Construir a arquitetura base em Python, do zero.
-   - Implementar as funções de ativação (e.g., Sigmoid, ReLU, Softmax).
+   - Implementar as funções de ativação (e.g., Sigmoid, Softmax).
    - Calcular gradientes usando backpropagation.
    - Incluir funcionalidades como momento e taxa de aprendizado.
 
@@ -17,3 +17,23 @@ Este projeto consiste na implementação de uma rede neural do tipo MLP (Multi-L
 3. Avaliar hiperparâmetros
    - Variar o número de camadas ocultas e neurônios por camada.
    - Testar diferentes taxas de aprendizados(eta) e fatores de momentum
+
+## Projeto 2: 
+Neste projeto, um modelo de rede neural não supervisionada foi aplicado para explorar e detectar padrões em diferentes conjuntos de dados, utilizando abordagens SOM e GNG. 
+
+### Objetivos 
+1. Selecionar datasets: 
+   - Fazer a limpeza e preparação dos dados.
+
+2. Aplicar a rede neural: 
+   - Implementar um modelo não supervisionado(SOM e GNG) nos datasets. 
+
+3. Avaliar os padrões detectados: 
+   - Identificar clusters, outliers e padrões nos dados. 
+   - Avaliar os agrupamentos obtidos 
+
+4. Varias os parâmetros do modelo: 
+   - Testar diferentes configurações e seus impactos: 
+      - Estrutura do grid 
+      - Taxas de aprendizado 
+      - Número de neurônios 

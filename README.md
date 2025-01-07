@@ -19,14 +19,14 @@ Este projeto consiste na implementação de uma rede neural do tipo MLP (Multi-L
    - Testar diferentes taxas de aprendizados(eta) e fatores de momentum
 
 ## Projeto 2: 
-Neste projeto, foi aplicada uma rede neural não supervisionada utilizando a abordagem Growing Neural Gas (GNG), com o objetivo de explorar e identificar padrões em diferentes conjuntos de dados.
+Neste projeto, foi aplicada uma rede neural não supervisionada utilizando a abordagem Self Organizing Map(SOM), com o objetivo de explorar e identificar padrões em diferentes conjuntos de dados.
 
 ### Objetivos 
 1. Selecionar datasets: 
    - Fazer a limpeza e preparação dos dados.
 
 2. Aplicar a rede neural: 
-   - Implementar um modelo não supervisionado(GNG) nos datasets. 
+   - Implementar um modelo não supervisionado nos datasets. 
 
 3. Avaliar os padrões detectados: 
    - Identificar clusters, outliers e padrões nos dados. 

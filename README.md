@@ -162,3 +162,5 @@ Este projeto teve como objetivo desenvolver e avaliar um sistema de detecção d
 ### Conclusão
 
 Este projeto demonstrou que o YOLOv8 é uma solução robusta para sistemas de visão computacional aplicados a câmeras veiculares. Sua capacidade de identificar objetos relevantes em cenários urbanos dinâmicos reforça sua aplicabilidade prática no campo da visão computacional. A integração com ferramentas modernas possibilitou um fluxo eficiente desde o processamento dos vídeos até a visualização dos resultados, evidenciando como redes neurais convolucionais modernas podem resolver problemas práticos com alta eficácia.
+
+![](Projeto Final/fotos/foto1.png)

@@ -1,7 +1,5 @@
 # Projetos da disciplina de introdução a redes neurais (UNIFESP)
 
-### Atualizar read me
-
 ## Projeto 1: 
 Este projeto consiste na implementação de uma rede neural do tipo MLP (Multi-Layer Perceptron) em Python, sem o uso de bibliotecas próprias para aprendizado de máquina, como PyTorch ou TensorFlow. Após a implementação, diferentes modelos foram desenvolvidos para resolver problemas de classificação e regressão, com análise e ajustes de hiperparâmetros.
 
@@ -66,3 +64,101 @@ Neste projeto foram treinados modelos Variational Autoencoders (VAEs) utilizando
 4. **Visualização e Interpretação:**  
    - Visualizar os padrões obtidos no espaço latente para facilitar a interpretação dos resultados.  
    - Comparar as representações geradas pelos modelos, destacando a eficácia dos VAEs na reconstrução de imagens e na extração de características latentes.
+
+## Projeto 4: 
+Neste projeto, foram treinados modelos LSTM para classificar séries temporais, onde o modelo recebe uma janela contínua de dados e, com base nos padrões dinâmicos observados, determina a categoria correspondente. A aplicação focou na classificação de segmentos de ECG, distinguindo entre condições normais, arritmias e outras variações.
+
+### Objetivos Específicos
+
+1. **Preparação dos Dados e Segmentação:**
+   - Coletar e pré-processar séries temporais, com ênfase em sinais de ECG.
+   - Segmentar os dados em janelas que permitam a captura dos padrões temporais relevantes para a análise.
+
+2. **Desenvolvimento e Treinamento do Modelo LSTM:**
+   - Construir e treinar redes LSTM para interpretar as janelas de dados.
+   - Ajustar a topologia das camadas LSTM, o número de neurônios e aplicar mecanismos de regularização com o objetivo de otimizar a identificação dos padrões dinâmicos.
+
+3. **Classificação e Análise dos Padrões Temporais:**
+   - Utilizar os modelos treinados para classificar os segmentos de ECG em categorias como normal, arritmia e outras.
+   - Avaliar a capacidade dos modelos em identificar corretamente os padrões significativos presentes nos sinais temporais.
+
+4. **Validação e Otimização:**
+   - Testar diferentes configurações das redes LSTM e comparar seu desempenho na classificação.
+   - Analisar os resultados através de métricas específicas para séries temporais, destacando a eficácia das redes LSTM na extração de informações dinâmicas.
+
+Este projeto teve como objetivo implementar e avaliar diferentes arquiteturas de redes neurais convolucionais (CNNs) para a classificação de imagens do dataset MNIST. Foram exploradas cinco topologias clássicas: LeNet, AlexNet, VGG, GoogLeNet e ResNet. A análise focou no impacto da profundidade das redes, número de filtros e hiperparâmetros no desempenho. Além disso, uma rede MLP previamente treinada foi utilizada como referência para comparação com a melhor CNN em termos de acurácia e número de parâmetros.
+
+## Projeto 5: 
+
+Este projeto teve como objetivo implementar e avaliar diferentes arquiteturas de redes neurais convolucionais (CNNs) para a classificação de imagens do dataset MNIST. Foram exploradas cinco topologias clássicas: LeNet, AlexNet, VGG, GoogLeNet e ResNet. A análise focou no impacto da profundidade das redes, número de filtros e hiperparâmetros no desempenho. Além disso, uma rede MLP previamente treinada foi utilizada como referência para comparação com a melhor CNN em termos de acurácia e número de parâmetros.
+
+## Objetivos Específicos
+
+1. **Implementação de Arquiteturas CNN:**
+   - As seguintes arquiteturas foram implementadas e treinadas no dataset MNIST:
+     - **LeNet:** Uma arquitetura pioneira, ideal para tarefas simples como o MNIST.
+     - **AlexNet:** Rede mais profunda que introduziu avanços como ReLU e dropout.
+     - **VGG:** Conhecida por sua simplicidade e uso de pequenas janelas de convolução.
+     - **GoogLeNet:** Rede mais complexa com módulos Inception.
+     - **ResNet:** Introduziu conexões residuais para facilitar o treinamento de redes profundas.
+   - Cada arquitetura foi ajustada para explorar o impacto da profundidade, número de filtros em cada camada e outros hiperparâmetros.
+
+2. **Treinamento e Avaliação dos Modelos:**
+   - Os modelos foram treinados no dataset MNIST, que contém 60.000 imagens de treino e 10.000 imagens de teste (28x28 pixels, escala de cinza).
+   - Foram utilizados diferentes hiperparâmetros, como taxa de aprendizado, otimizadores (SGD, Adam), regularização (dropout) e tamanho do batch.
+   - A acurácia foi usada como métrica principal para identificar os dois melhores modelos.
+
+3. **Análise Detalhada dos Melhores Modelos:**
+   - Para os dois modelos com melhor desempenho:
+     - Foi gerada a matriz de confusão para avaliar o desempenho por classe.
+     - Uma comparação detalhada das arquiteturas foi realizada, destacando diferenças na profundidade, número de filtros e eficiência na classificação.
+
+4. **Comparação com Rede MLP:**
+   - Uma rede MLP previamente treinada no mesmo dataset foi usada como referência.
+   - A comparação incluiu:
+     - **Acurácia:** Para avaliar a capacidade preditiva.
+     - **Número de parâmetros:** Para analisar a eficiência computacional.
+   - As vantagens e limitações das abordagens CNN e MLP foram destacadas.
+
+## Projeto Final: Sistema de Detecção de Objetos com YOLOv8 em Câmeras Veiculares
+
+Este projeto teve como objetivo desenvolver e avaliar um sistema de detecção de objetos utilizando redes neurais convolucionais (CNNs), com foco no modelo YOLOv8 (*You Only Look Once*), aplicado a vídeos capturados por câmeras embarcadas em veículos. O sistema foi projetado para identificar e localizar automaticamente elementos presentes em cenários de tráfego, como pedestres, veículos e sinais de trânsito, demonstrando a eficiência do modelo em situações reais.
+
+### Objetivos Específicos
+
+1. **Implementação do Modelo YOLOv8:**
+   - O modelo YOLOv8, pré-treinado no dataset COCO, foi utilizado como base para a detecção de objetos.
+   - Sua arquitetura modular, composta por:
+     - **Backbone:** Para extração eficiente de características.
+     - **Neck:** Para agregação e fusão das características extraídas.
+     - **Head:** Para realizar as predições finais (localização e classificação dos objetos).
+   - A integração com ferramentas como OpenCV e FFmpeg permitiu o processamento eficiente dos vídeos e a visualização dos resultados diretamente no ambiente de desenvolvimento.
+
+2. **Avaliação em Dataset BDD100K:**
+   - Foi utilizado o dataset BDD100K, que contém vídeos capturados em ambientes urbanos, para avaliar o desempenho do modelo em condições reais.
+   - O modelo foi testado em:
+     - **3 frames aleatórios:** Para validação pontual da precisão na detecção.
+     - **3 vídeos completos:** Para avaliar o desempenho do YOLOv8 ao processar sequências completas.
+
+3. **Análise de Desempenho:**
+   - Foram analisadas métricas como:
+     - **Precisão:** Capacidade do modelo de identificar corretamente os objetos relevantes.
+     - **Velocidade:** Avaliação da performance em tempo real, mesmo em vídeos de alta resolução.
+   - A robustez do modelo foi avaliada considerando diferentes condições de tráfego e escalas dos objetos.
+
+4. **Aplicabilidade Prática:**
+   - O sistema desenvolvido demonstra a aplicabilidade do YOLOv8 em sistemas embarcados para visão computacional.
+   - Exemplos incluem:
+     - Monitoramento veicular.
+     - Sistemas avançados de assistência ao motorista (ADAS).
+     - Análise automatizada de tráfego urbano.
+
+### Resultados
+
+- O modelo YOLOv8 mostrou-se altamente eficaz para a tarefa de detecção em tempo real, combinando precisão e velocidade.  
+- Foi capaz de identificar pedestres, veículos e sinais de trânsito em cenários dinâmicos e variados, mesmo sob condições desafiadoras como mudanças de iluminação e densidade variável do tráfego.  
+- A arquitetura modular do YOLOv8 contribuiu para uma extração eficiente das características e predições rápidas.
+
+### Conclusão
+
+Este projeto demonstrou que o YOLOv8 é uma solução robusta para sistemas de visão computacional aplicados a câmeras veiculares. Sua capacidade de identificar objetos relevantes em cenários urbanos dinâmicos reforça sua aplicabilidade prática no campo da visão computacional. A integração com ferramentas modernas possibilitou um fluxo eficiente desde o processamento dos vídeos até a visualização dos resultados, evidenciando como redes neurais convolucionais modernas podem resolver problemas práticos com alta eficácia.

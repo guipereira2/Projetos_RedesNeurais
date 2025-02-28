@@ -165,4 +165,4 @@ Este projeto demonstrou que o YOLOv8 é uma solução robusta para sistemas de v
 
 ##
 
-![](prints/foto1.png)
+![](prints/foto2.png)

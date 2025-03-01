@@ -85,9 +85,7 @@ Neste projeto, foram treinados modelos LSTM para classificar séries temporais, 
 4. **Validação e Otimização:**
    - Testar diferentes configurações das redes LSTM e comparar seu desempenho na classificação.
    - Analisar os resultados através de métricas específicas para séries temporais, destacando a eficácia das redes LSTM na extração de informações dinâmicas.
-
-Este projeto teve como objetivo implementar e avaliar diferentes arquiteturas de redes neurais convolucionais (CNNs) para a classificação de imagens do dataset MNIST. Foram exploradas cinco topologias clássicas: LeNet, AlexNet, VGG, GoogLeNet e ResNet. A análise focou no impacto da profundidade das redes, número de filtros e hiperparâmetros no desempenho. Além disso, uma rede MLP previamente treinada foi utilizada como referência para comparação com a melhor CNN em termos de acurácia e número de parâmetros.
-
+   - 
 ## Projeto 5: 
 
 Este projeto teve como objetivo implementar e avaliar diferentes arquiteturas de redes neurais convolucionais (CNNs) para a classificação de imagens do dataset MNIST. Foram exploradas cinco topologias clássicas: LeNet, AlexNet, VGG, GoogLeNet e ResNet. A análise focou no impacto da profundidade das redes, número de filtros e hiperparâmetros no desempenho. Além disso, uma rede MLP previamente treinada foi utilizada como referência para comparação com a melhor CNN em termos de acurácia e número de parâmetros.
